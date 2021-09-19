@@ -5,55 +5,707 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samar - Freelance Product Designer</title>
+
+    <!-- add font -->
+    <link rel="stylesheet" href="./assets/css/flaticon.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/samar_icon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- css phần swiper -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <!-- CHÈN WOW JS ẩn hiện phần tử khi cuộn trang-->
+    <link rel='stylesheet' href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
     <!-- CSS chính -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-            <img src="./assets/img/logo-2.png" alt="">
+
+    <!-- PHẦN HEADER -->
+    <header id="navbar">
+        <div class="header_cover cover">
+            <div class="header-logo">
+                <img src="./assets/img/logo-2.png" alt="">
+            </div>
+            <ul class="font15">
+                <li><span> Home </span><i class="fa fa-angle-down"></i></li>
+                <li><span>Pages </span><i class="fa fa-angle-down"></i></li>
+                <li><span>Services </span><i class="fa fa-angle-down"></i></li>
+                <li><span>Post Layout </span><i class="fa fa-angle-down"></i></li>
+                <li><span>Blog </span><i class="fa fa-angle-down"></i></li>
+                <li><span>Contact Us </span><i class="fa fa-angle-down"></i></li>
+            </ul>
+            <a class="quote-button MainButton" href="#">GET A QUOTE</a>
         </div>
-        <ul>
-            <li>Home <i class="fa fa-angle-down"></i></li>
-            <li>Pages <i class="fa fa-angle-down"></i></li>
-            <li>Services <i class="fa fa-angle-down"></i></li>
-            <li>Post Layout <i class="fa fa-angle-down"></i></li>
-            <li>Blog <i class="fa fa-angle-down"></i></li>
-            <li>Contact Us <i class="fa fa-angle-down"></i></li>
-        </ul>
-        <a class="quote-button font-16" href="#">GET A QUOTE</a>
     </header>
+
+    <!-- PHẦN BANNER = FREELANCE PRODUCT DESIGNER RUNNING -->
     <section class="banner">
+        <div class="banner_cover cover">
+            <div class="banner_content">
+                <h2 class="banner_sub-title sub-title mb20 fade-in-up1">We are The Best</h2>
+                <h1 class="banner_main-title main-title fade-in-up2">Freelance Product Designer Running</h1>
+                <p class="font18 mb15 fade-in-up3">We develop the relationships that underpin the next phase in your <br> organisation’s growth.</p>
+                <ul class="mb15  fade-in-up4">
+                    <li><span><i class="las la-check"></i></span>Master's degree in designing</li>
+                    <li><span><i class="las la-check"></i></span>Outstanding mobile design</li>
+                </ul>
+                <a class="banner-button MainButton fade-in-up5" href="#">GET STARTED</a>
+            </div>
+            <div class="banner_img">
+                <img class="fade-in-up4" src="./assets/img/pic3_1.png" alt="">
+                <div class="banner_animation"><img src="./assets/img/pic1.png" alt="banner_animation"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <!-- PHẦN WHAT WE DO BEST - OUR DIGITAL SERVICES -->
+    <section class="services pt115">
+        <div class="header_cover cover">
+            <div class="services_header mb40">
+                <h2 class="sub-title">What We Do Best</h2>
+                <h1 class="main-title">Our Digital Services</h1>
+            </div>
+            <div class="services_content">
+                <div class="services_item 1">
+                    <div class="mb15"><img src="./assets/img/pic1_3.jpg" alt="Web Development"></div>
+                    <h3 class="mb15 font25">Web Development</h3>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                </div>
+                <div class="services_item 2">
+                    <div class="mb15"><img src="./assets/img/pic2_2.jpg" alt="Web Development"></div>
+                    <h3 class="mb15 font25">Strategy & Research</h3>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                </div>
+                <div class="services_item 3">
+                    <div class="mb15"><img src="./assets/img/pic3_2.jpg" alt="Web Development"></div>
+                    <h3 class="mb15 font25">Growth Tracking</h3>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PHẦN ABOUT US - BUILD YOUR BUSINESS WEBSITE BETTER -->
+    <section class="aboutUs pt115">
+        <div class="cover">
+            <div class="aboutUs_left wow fadeInLeft" data-wow-duration="4s" data-wow-delay=".5s" data-wow-offset:="0px">
+                <div class="left_content">
+                    <div class="left_container">
+                        <div class="img_container"><img src="./assets/img/pic1.jpg" alt=""></div>
+                    <div class="aboutUs_background"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutUs_right wow fadeInRight" data-wow-duration="4s" data-wow-delay=".5s" data-wow-offset:="0px">
+                <h2 class="sub-title">About Us</h2>
+                <h1 class="main-title">Build Your Business Website Better</h1>
+                <p class="mb15 font15">Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus blandit, dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed euismod turpis id nibh suscipit semper. Pellentesque dapibus risus arcu.</p>
+                <ul class="font15 mb30">
+                    <li><span><i class="las la-check"></i></span>We support programs that create advancement opportunities for people.</li>
+                    <li><span><i class="las la-check"></i></span>Get a view of events and trends. Be updated on our recent news.</li>
+                    <li><span><i class="las la-check"></i></span>Finally, it all comes down to people. Creating a winning team.</li>
+                    <li><span><i class="las la-check"></i></span>Get a view of events and trends. Be updated on our recent news.</li>
+                </ul>
+                <a class="MainButton" href="#">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN CHẠY SỐ -->
+    <section class="number">
+        <div class="cover">
+            <div class="number_item 1">
+                <div class="number_icon mb15"><i class="flaticon-smile"></i></div>
+                <h2><span class="counter">18</span>Ml</h2>
+                <p class="font18">Satisfied Clients</p>
+            </div>
+            <div class="number_item 2">
+                <div class="number_icon mb15"><i class="flaticon-line-chart"></i></div>
+                <h2><span class="counter">20</span>Ml</h2>
+                <p class="font18">Project Completed</p>
+            </div>
+            <div class="number_item 3">
+                <div class="number_icon mb15"><i class="flaticon-startup"></i></div>
+                <h2><span class="counter">30</span>Ml</h2>
+                <p class="font18">Project Lunched</p>
+            </div>
+            <div class="number_item 4">
+                <div class="number_icon mb15"><i class="flaticon-confetti"></i></div>
+                <h2><span class="counter">50</span></h2>
+                <p class="font18">Years Completed</p>
+            </div>
+        </div>
+    </section>
+    <!-- PHẦN OUR FEATURES - BEHIND THE STORY OF SAMAR AGENCY -->
+    <section class="features pt115">
+        <div class="cover">
+            <div class="fea_left">
+                <h2 class="sub-title">Our Features</h2>
+                <h1 class="main-title mb40">Behind The Story Of Samar Agency</h1>
+                <div class="fea_content">
+                    <div class="fea_item_cover">
+                        <div class="fea_item item1">
+                            <div class="fea_icon"><i class="flaticon-idea"></i></div>
+                            <div>
+                                <h3 class="font25">Idea & Analysis Gathering</h3>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fea_item_cover">
+                        <div class="fea_item item2">
+                            <div class="fea_icon"><i class="flaticon-coding"></i></div>
+                            <div>
+                                <h3 class="font25">Design & Developing</h3>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fea_item_cover">
+                        <div class="fea_item item3">
+                            <div class="fea_icon"><i class="flaticon-rocket"></i></div>
+                            <div>
+                                <h3 class="font25">Testing & Lunching</h3>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fea_right">
+                <div><img src="./assets/img/pic3.png" alt=""></div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- PHẦN PORTFOLIO - OUR LATEST WORK -->
+    <section class="portfolio pt115">
+        <div class="cover">
+            <h2 class="sub-title">Portfolio</h2>
+            <h1 class="main-title">Our Latest Work</h1>
+            <div class="por_img_cover">
+                <div class="por_item item1 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset:="0px">
+                    <div class="skew-liner"></div>
+                    <div class="port_text">
+                        <a href="#" class="font22 fontPop">Software Landing</a><br>
+                        <a href="#">By Jhone Doe</a>
+                    </div>
+                    <div class="add_btn">
+                        <i class="la la-plus"></i>
+                    </div>
+                    <img src="./assets/img/pic1_2.jpg" alt="Portfolio_img">
+                </div>
+                <div class="por_item item2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset:="0px">
+                    <div class="skew-liner"></div>
+                    <div class="port_text">
+                        <a href="#" class="font22 fontPop">Software Landing</a><br>
+                        <a href="#">By Jhone Doe</a>
+                    </div>
+                    <div class="add_btn">
+                        <i class="la la-plus"></i>
+                    </div>
+                    <img src="./assets/img/pic2_1.jpg" alt="Portfolio_img">
+                </div>
+                <div class="por_item item3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset:="0px">
+                    <div class="skew-liner"></div>
+                    <div class="port_text">
+                        <a href="#" class="font22 fontPop">Software Landing</a><br>
+                        <a href="#">By Jhone Doe</a>
+                    </div>
+                    <div class="add_btn">
+                        <i class="la la-plus"></i>
+                    </div>
+                    <img src="./assets/img/pic3_1.jpg" alt="Portfolio_img">
+                </div>
+                <div class="por_item item4 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset:="0px">
+                    <div class="skew-liner"></div>
+                    <div class="port_text">
+                        <a href="#" class="font22 fontPop">Software Landing</a><br>
+                        <a href="#">By Jhone Doe</a>
+                    </div>
+                    <div class="add_btn">
+                        <i class="la la-plus"></i>
+                    </div>
+                    <img src="./assets/img/pic4.jpg" alt="Portfolio_img">
+                </div>
+                <div class="por_item item5 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset:="0px">
+                    <div class="skew-liner"></div>
+                    <div class="port_text">
+                        <a href="#" class="font22 fontPop">Software Landing</a><br>
+                        <a href="#">By Jhone Doe</a>
+                    </div>
+                    <div class="add_btn">
+                        <i class="la la-plus"></i>
+                    </div>
+                    <img src="./assets/img/pic6.jpg" alt="Portfolio_img">
+                </div>
+                <div class="por_item item6 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset:="0px">
+                    <div class="skew-liner"></div>
+                    <div class="port_text">
+                        <a href="#" class="font22 fontPop">Software Landing</a><br>
+                        <a href="#">By Jhone Doe</a>
+                    </div>
+                    <div class="add_btn">
+                        <i class="la la-plus"></i>
+                    </div>
+                    <img src="./assets/img/pic5.jpg" alt="Portfolio_img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PHẦN CHOOSE YOUR PLAN -->
+    <section class="plan">
+        <div class="cover">
+            <h2 class="sub-title">Choose Your Plan</h2>
+            <h1 class="main-title">Choose Your Plan</h1>
+            <div class="switch-button">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                    <p class="check_left">MONTHLY</p>
+                    <p class="check_left">YEARLY</p>
+                  </label><br><br>
+            </div>
+            <div class="plan_container">
+                <div class="plan_item item1">
+                    <h3 class="mb20">Basic Plan</h3>
+                    <img src="./assets/img/pic4_1.jpg" alt="Basic Plan">
+                    <p class="font18 fontPop"><span class="fontPop">$49</span><b>/Month</b></p>
+                    <hr>
+                    <ul>
+                        <li><span class="avalable"><i class="fa fa-check"></i></i></span>Graphic Design</li>
+                        <li><span class="avalable"><i class="fa fa-check"></i></i></span>Web Design</li>
+                        <li><span><i class="fa fa-check"></i></i></span>UI/UX</li>
+                        <li><span><i class="fa fa-check"></i></i></span>HTML/CSS</li>
+                        <li><span><i class="fa fa-check"></i></i></span>SEO Marketing</li>
+                        <li><span><i class="fa fa-check"></i></i></span>Business Analysis</li>
+                    </ul>
+                    <a class="quote-button MainButton" href="#">START NOW</a>
+                </div>
+                <div class="plan_item item2">
+                    <h3 class="mb20">Standart Plan</h3>
+                    <img src="./assets/img/pic5_1.jpg" alt="Basic Plan">
+                    <p class="font18 fontPop"><span class="fontPop">$99</span><b>/Month</b></p>
+                    <hr>
+                    <ul>
+                        <li><span class="avalable"><i class="fa fa-check"></i></i></span>Graphic Design</li>
+                        <li><span class="avalable"><i class="fa fa-check"></i></i></span>Web Design</li>
+                        <li><span class="avalable"><i class="fa fa-check"></i></i></span>UI/UX</li>
+                        <li><span><i class="fa fa-check"></i></i></span>HTML/CSS</li>
+                        <li><span><i class="fa fa-check"></i></i></span>SEO Marketing</li>
+                        <li><span><i class="fa fa-check"></i></i></span>Business Analysis</li>
+                    </ul>
+                    <a class="quote-button MainButton" href="#">START NOW</a>
+                </div>
+                <div class="plan_item item3">
+                    <h3 class="mb20">Premium Plan</h3>
+                    <img src="./assets/img/pic6_1.jpg" alt="Basic Plan">
+                    <p class="font18 fontPop"><span class="fontPop">$149</span><b>/Month</b></p>
+                    <hr>
+                    <ul>
+                        <li><span class="avalable"><i class="fa fa-check"></i></span>Graphic Design</li>
+                        <li><span class="avalable"><i class="fa fa-check"></i></span>Web Design</li>
+                        <li><span class="avalable"><i class="fa fa-check"></i></span>UI/UX</li>
+                        <li><span class="avalable"><i class="fa fa-check"></i></span>HTML/CSS</li>
+                        <li><span class="avalable"><i class="fa fa-check"></i></span>SEO Marketing</li>
+                        <li><span class="avalable"><i class="fa fa-check"></i></span>Business Analysis</li>
+                    </ul>
+                    <a class="quote-button MainButton" href="#">START NOW</a>
+                </div>
+            </div>
+        </div>
 
     </section>
-    <!-- Phần What We Do Best - Our Digital Services -->
-    <section class="services"></section>
-    <!-- Phần About Us - Build Your Business Website Better -->
-    <section class="aboutUs"></section>
+    <!-- PHẦN TESTIMONIAL - WHAT OUR CLIENTS SAY’S -->
+    <section class="testimonial pt115">
+        <div class="cover">
+            <h2 class="sub-title">Testimonial</h2>
+            <h1 class="main-title">What Our Clients Say’s</h1>
+            <!-- phần slider -->
+            <div class="testimonial_slider">
+                <div class="swiper-container gallery-thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                      <div class="swiper-slide-container">
+                          <div class="thumbs_item">
+                              <img src="./assets/img/pic2_3.jpg" alt="">
+                              <div class="shape-bx"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                      <div class="swiper-slide-container">
+                        <div class="thumbs_item">
+                            <img src="./assets/img/pic3_3.jpg" alt="">
+                            <div class="shape-bx"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide3">
+                      <div class="swiper-slide-container">
+                        <div class="thumbs_item">
+                            <img src="./assets/img/pic1_4.jpg" alt="">
+                            <div class="shape-bx"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-container gallery-top">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                      <div class="swiper-slide-container">
+                        <div class="top_item">
+                            <h3 class="font22"><b>Cak Dikin</b></h3>
+                            <p class="mb20 font15">CEO & Founder</p>
+                            <p class="font18">Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="swiper-slide-container">
+                          <div class="top_item">
+                              <h3 class="font22"><b>Cak Dikin</b></h3>
+                              <p class="mb20 font15">CEO & Founder</p>
+                              <p class="font18">Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide3">
+                        <div class="swiper-slide-container">
+                          <div class="top_item">
+                              <h3 class="font22"><b>Cak Dikin</b></h3>
+                              <p class="mb20 font15">CEO & Founder</p>
+                              <p class="font18">Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Add bullet-pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- PHẦN OUR BLOG - LATEST NEWS & BLOG -->
+    <section class="blog pt115">
+        <div class="cover">
+            <h2 class="sub-title">Our Blog</h2>
+            <h1 class="main-title">Latest News & Blog</h1>
+            <div class="blog_slider">
+                <div class="swiper BlogSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="blog_item swiper-slide item1">
+                          <img src="./assets/img/pic2.jpg" alt="blog">
+                          <div class="blog_content">
+                            <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                            <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            <hr>
+                            <div class="blog_footer">
+                                <ul>
+                                    <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                    <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                </ul>
+                            </div>
+                            <div class="blog_date">28 JUNE 2021</div>
+                          </div>
+                        </div>
+                        <div class="blog_item swiper-slide item2">
+                        <img src="./assets/img/pic3.jpg" alt="blog">
+                        <div class="blog_content">
+                          <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                          <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                          <hr>
+                          <div class="blog_footer">
+                              <ul>
+                                  <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                  <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                              </ul>
+                          </div>
+                          <div class="blog_date">20 SEP 2021</div>
+                        </div>
+                        </div>
+                        <div class="blog_item swiper-slide item3">
+                        <img src="./assets/img/pic1_1.jpg" alt="blog">
+                        <div class="blog_content">
+                          <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                          <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                          <hr>
+                          <div class="blog_footer">
+                              <ul>
+                                  <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                  <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                              </ul>
+                          </div>
+                          <div class="blog_date">25 MARCH 2021</div>
+                        </div>
+                        </div>
+                        <div class="blog_item swiper-slide item1">
+                            <img src="./assets/img/pic2.jpg" alt="blog">
+                            <div class="blog_content">
+                              <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                              <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                              <hr>
+                              <div class="blog_footer">
+                                  <ul>
+                                      <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                      <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                  </ul>
+                              </div>
+                              <div class="blog_date">28 JUNE 2021</div>
+                            </div>
+                          </div>
+                          <div class="blog_item swiper-slide item2">
+                          <img src="./assets/img/pic3.jpg" alt="blog">
+                          <div class="blog_content">
+                            <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                            <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            <hr>
+                            <div class="blog_footer">
+                                <ul>
+                                    <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                    <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                </ul>
+                            </div>
+                            <div class="blog_date">20 SEP 2021</div>
+                          </div>
+                          </div>
+                          <div class="blog_item swiper-slide item3">
+                          <img src="./assets/img/pic1_1.jpg" alt="blog">
+                          <div class="blog_content">
+                            <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                            <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            <hr>
+                            <div class="blog_footer">
+                                <ul>
+                                    <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                    <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                </ul>
+                            </div>
+                            <div class="blog_date">25 MARCH 2021</div>
+                          </div>
+                          </div>
+                          <div class="blog_item swiper-slide item1">
+                            <img src="./assets/img/pic2.jpg" alt="blog">
+                            <div class="blog_content">
+                              <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                              <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                              <hr>
+                              <div class="blog_footer">
+                                  <ul>
+                                      <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                      <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                  </ul>
+                              </div>
+                              <div class="blog_date">28 JUNE 2021</div>
+                            </div>
+                          </div>
+                          <div class="blog_item swiper-slide item2">
+                          <img src="./assets/img/pic3.jpg" alt="blog">
+                          <div class="blog_content">
+                            <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                            <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            <hr>
+                            <div class="blog_footer">
+                                <ul>
+                                    <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                    <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                </ul>
+                            </div>
+                            <div class="blog_date">20 SEP 2021</div>
+                          </div>
+                          </div>
+                          <div class="blog_item swiper-slide item3">
+                          <img src="./assets/img/pic1_1.jpg" alt="blog">
+                          <div class="blog_content">
+                            <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                            <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            <hr>
+                            <div class="blog_footer">
+                                <ul>
+                                    <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                    <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                </ul>
+                            </div>
+                            <div class="blog_date">25 MARCH 2021</div>
+                          </div>
+                          </div>
+                          <div class="blog_item swiper-slide item1">
+                            <img src="./assets/img/pic2.jpg" alt="blog">
+                            <div class="blog_content">
+                              <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                              <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                              <hr>
+                              <div class="blog_footer">
+                                  <ul>
+                                      <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                      <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                  </ul>
+                              </div>
+                              <div class="blog_date">28 JUNE 2021</div>
+                            </div>
+                          </div>
+                          <div class="blog_item swiper-slide item2">
+                          <img src="./assets/img/pic3.jpg" alt="blog">
+                          <div class="blog_content">
+                            <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                            <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            <hr>
+                            <div class="blog_footer">
+                                <ul>
+                                    <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                    <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                </ul>
+                            </div>
+                            <div class="blog_date">20 SEP 2021</div>
+                          </div>
+                          </div>
+                          <div class="blog_item swiper-slide item3">
+                          <img src="./assets/img/pic1_1.jpg" alt="blog">
+                          <div class="blog_content">
+                            <a class="mb15" chref="https://samar.dexignzone.com/xhtml/blog-details-1.html">Maecenas maximus augue eget libero dictum.</a>
+                            <p class="mb15">Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            <hr>
+                            <div class="blog_footer">
+                                <ul>
+                                    <li><i class="las la-user-circle"></i><span>BY</span><a href="">JOHNE DOE</a></li>
+                                    <li><i class="las la-comment"></i><span>COMMENT</span><SPan>15</SPan></li>
+                                </ul>
+                            </div>
+                            <div class="blog_date">25 MARCH 2021</div>
+                          </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PHẦN CAROUSEL LOGO -->
+    <section class="CarouselLogo">
+        <div class="cover">
+            <div class="swiper LogoSwiper">
+                <div class="swiper-wrapper">
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light1.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light2.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light3.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light4.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light5.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light6.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light1.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light2.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light3.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light4.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light5.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light6.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light1.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light2.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light3.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light4.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light5.png" alt="logo1">
+                  </div>
+                  <div class="logo_item swiper-slide">
+                        <img src="./assets/img/logo-light6.png" alt="logo1">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
 
-    <!-- Phần chạy số -->
-    <section class="counter"></section>
-    <!-- Phần Our Features - Behind The Story Of Samar Agency -->
-    <section class="features"></section>
-    <!-- Phần Portfolio - Our Latest Work -->
-    <section class="portfolio"></section>
-    <!-- Phần Choose Your Plan -->
-    <section class="plan"></section>
-    <!-- PHẦN Testimonial -    What Our Clients Say’s -->
-    <section class="testimonial"></section>
-    <!-- PHẦN Our Blog -    Latest News & Blog -->
-    <section class="blog"></section>
-    <!-- Phần Carousel logo -->
-    <section class="CarouselLogo"></section>
-
-    <!-- Phần Footer -->
+    <!-- PHẦN FOOTER -->
     <footer>
         <section class="footer_subscribe"></section>
         <section class="footer_content"></section>
         <section class="footer_bottom"></section>
     </footer>
+    <!-- JAVA SCRIP -->
+
+    <!-- add thư viện JQuery 3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- đếm số -->
+    <script src="./assets/js/jquery.countup.min.js"></script>
+    <script>$('.counter').countUp({
+        time: 6000,
+        delay: 10
+    });
+    </script>
+    
+    <!-- cuộn trang hiện phần ABOUT US  -->
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+    <script> new WOW().init(); </script>
+    <!-- thay màu nền header khi cuộn trang -->
+    <script>
+        // When the user scrolls down 30px from the top of the document, resize the navbar's backgroundColor, height, boxShadow
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("navbar").style.backgroundColor = "white";
+            document.getElementById("navbar").style.height = "90px";
+            document.getElementById("navbar").style.boxShadow = "0 0 50px rgb(0 0 0 / 10%)";
+          } else {
+            document.getElementById("navbar").style.backgroundColor = "transparent";
+            document.getElementById("navbar").style.height = "130px";
+            document.getElementById("navbar").style.boxShadow = "none";
+          }
+        }
+    </script>
+    <!-- Phần js swiper@7.0.6 -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/Swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".BlogSwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".LogoSwiper", {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        });
+      </script>
 
 </body>
 </html>
