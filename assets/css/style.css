@@ -56,7 +56,6 @@ li{
 .cover{
     width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 /* Phần tiêu đề phụ phía trên màu hường */
 .sub-title{
@@ -649,6 +648,7 @@ input:checked + .slider:before {
     background-image: url(../img/bg17.png);
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
 }
 .testimonial_slider {
     /* background: #eee; */
@@ -839,6 +839,8 @@ input:checked + .slider:before {
     background-image: url(../img/bg16.png);
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+
 }
 .blog_item{
     border-radius: 8px;
