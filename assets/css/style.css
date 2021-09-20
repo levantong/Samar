@@ -698,7 +698,6 @@ input:checked + .slider:before {
 .swiper-slide-container {
     text-align: center;
     font-size: 18px;
-    /* background: #fff; */
     height: 100%;
     max-width: 710px;
     margin: auto;
@@ -996,7 +995,9 @@ footer::after{
 
 }
 .email_input input:focus,
-.email_input input:hover
+.email_input input:hover,
+.email_input input:focus-visible,
+.email_input input:active
 {
     border: 1px solid var(--primary);
 }
