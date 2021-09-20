@@ -595,11 +595,13 @@ input:checked + .slider:before {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 0 50px rgb(0 0 0 / 10%);
-    transition: all 0.5s;
+    transition: all 1s;
+    border: 3px solid transparent;
 }
 .plan_item:hover{
     border: 3px solid transparent;
     border-image: url(../img/br.png) 1 round;
+    transform: translateY(-12px);
 }
 .plan_item img{
     width: 125px;
@@ -909,7 +911,6 @@ input:checked + .slider:before {
 .logo-pink, .logo-light{
     display: block;
     max-width: 100%;
-    /* border-radius: 12px; */
 }
 .CarouselLogo .swiper-wrapper{
     padding: 30px 0;
@@ -1048,17 +1049,26 @@ footer::after{
     padding: 8px 0px;
 }
 .footer_content ul li a,
-.footer_content ul li span
+.footer_content ul li p
 {
-    transition: all .7s;
+    transition: all .5s;
     color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
     font-weight: 400;
 
 }
-.footer_content ul li:hover a,
+.footer_content ul i{
+    transition: all .5s;
+}
+
+.footer_content ul li a::before{
+    content:"\f105";
+    font-family: FontAwesome;
+}
+.footer_content ul li a:hover,
 .footer_content ul li:hover span,
-.footer_content ul li:hover i{
+.footer_content ul li:hover i,
+.footer_content ul li:hover>a{
     color: white;
 }
 .footer_content ul li i{
@@ -1117,8 +1127,79 @@ footer::after{
 }
 .footer_menu h2:hover::after{
     left: 40px;
-    width: 80px;
+    width: 70px;
 }
+
+.footer_bottom{
+    background-color: #1f343b;
+    padding: 10px 0;
+}
+.footer_bottom .cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+
+}
+.footer_icon{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+    color: white;
+    line-height: 34px;
+    margin-right: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+.footer_icon:hover{
+    background-image: var(--gradient);
+    background-size: 200%;
+
+}
+.footer_right{
+    text-align: right;
+}
+.footer_left a{
+    color: var(--primary)
+}
+/*  Nút backtoTop  */
+.to_top_tbn{
+    display: block;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: -4px 4px 24px -10px var(--primary);
+    animation: BackToTop 5s infinite ease-in-out;
+    visibility: hidden;
+    opacity: 0
+}
+
+.cd-top--is-visible{
+    visibility: visible;
+    opacity: 1;
+}
+  
+
+@keyframes BackToTop{
+    50%{
+        transform: translateY(10px);
+    }
+}
+
 /* KHAI BÁO HIỆU ỨNG */
 
     /* hiệu ứng chạy sọc xéo PHẦN ảnh PORTFOLIO */
