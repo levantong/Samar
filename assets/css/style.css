@@ -990,12 +990,15 @@ footer::after{
     font-size: 15px;
     font-weight: 400;
     color: #888;
-    border: 1px solid #fff;
+    border: 1px solid transparent;
     border-radius: 8px 0 0 8px;
+    transition: all 1s;
+
 }
-.email_input input:focus {
+.email_input input:focus,
+.email_input input:hover
+{
     border: 1px solid var(--primary);
-    background-color: rgb(250, 250, 250);
 }
 .email_input{
     display: grid;
@@ -1014,6 +1017,7 @@ footer::after{
     background-size: 200%;
     overflow: hidden;
     padding: 15px;
+    cursor: pointer;
 }
 .email_input button:hover{
     background-position: right;
@@ -1061,14 +1065,13 @@ footer::after{
     transition: all .5s;
 }
 
-.footer_content ul li a::before{
-    content:"\f105";
-    font-family: FontAwesome;
+.footer_menu ul li a::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f007"; 
+    margin-right: 8px;
 }
-.footer_content ul li a:hover,
-.footer_content ul li:hover span,
-.footer_content ul li:hover i,
-.footer_content ul li:hover>a{
+
+.footer_content ul li a:hover{
     color: white;
 }
 .footer_content ul li i{
@@ -1192,11 +1195,14 @@ footer::after{
     visibility: visible;
     opacity: 1;
 }
+.cd-top--fade-out {
+    opacity: .6;
+}
   
 
 @keyframes BackToTop{
     50%{
-        transform: translateY(10px);
+        transform: translateY(-10px);
     }
 }
 
