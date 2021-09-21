@@ -156,7 +156,7 @@ header li:hover span{
 /* PHẦN BANNER = FREELANCE PRODUCT DESIGNER RUNNING */
 .banner{
     padding-top: 180px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../../assets/img/pic2.png);
 }
@@ -309,7 +309,7 @@ header li:hover span{
 .number{
     background-image: url(../img/bg14.png);
     padding: 80px 0 50px;
-    background-size: contain;
+    background-size: cover;
     background-color: #fffbf7
 }
 .number .cover{
@@ -341,7 +341,7 @@ header li:hover span{
 /* PHẦN OUR FEATURES */
 .features{
     background-image: url(../img/bg2.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -523,7 +523,7 @@ header li:hover span{
     margin-top: 115px;
     text-align: center;
     background-image: url(../img/bg16.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 /* nút switch */
@@ -651,7 +651,7 @@ input:checked + .slider:before {
 /* PHẦN TESTIMONIAL */
 .testimonial{
     background-image: url(../img/bg17.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -801,7 +801,7 @@ input:checked + .slider:before {
     background-color: var(--primary);
     background-image: url(../img/pattern12.png);
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
     bottom: 10px;
     transition: all 2s;
     z-index: -1;
@@ -842,7 +842,7 @@ input:checked + .slider:before {
 /* PHẦN OUR BLOG */
 .blog{
     background-image: url(../img/bg16.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 
@@ -942,8 +942,8 @@ input:checked + .slider:before {
 /* PHẦN FOOTER */
 footer{
     background-image: url(../img/bg4.png);
-    background-size: contain;
-    background-position: top;
+    background-size: cover;
+    /* background-position: top; */
     background-color: #000;
     background-color: #0e1b1f;
     position: relative;
@@ -954,7 +954,7 @@ footer::after{
     background-image: url(../img/pattern2.png);
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: contain;
+    /* background-size: cover; */
     position: absolute;
     top: 0;
     left: 0;
@@ -1068,8 +1068,9 @@ footer::after{
 
 .footer_menu ul li a::before{
     font-family: "Font Awesome 5 Free";
-    content: "\f007"; 
+    content: "\f105"; 
     margin-right: 8px;
+    font-weight: 900;
 }
 
 .footer_content ul li a:hover{
