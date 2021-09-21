@@ -14,7 +14,6 @@ html{
     line-height: 1.2;
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
 }
 
 /* KHAI BÁO CÁC CLASS CHUNG THƯỜNG DÙNG */
@@ -95,6 +94,13 @@ li{
     clear: both;
 }
 
+/* chỉnh class chung set background img */
+.bg_img{
+    background-size: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
 /* CSS phần kiểu nút chính */
 .MainButton{
     font-weight: 500;
@@ -156,8 +162,6 @@ header li:hover span{
 /* PHẦN BANNER = FREELANCE PRODUCT DESIGNER RUNNING */
 .banner{
     padding-top: 180px;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: url(../../assets/img/pic2.png);
 }
 .banner_content{
@@ -309,7 +313,6 @@ header li:hover span{
 .number{
     background-image: url(../img/bg14.png);
     padding: 80px 0 50px;
-    background-size: cover;
     background-color: #fffbf7
 }
 .number .cover{
@@ -341,9 +344,6 @@ header li:hover span{
 /* PHẦN OUR FEATURES */
 .features{
     background-image: url(../img/bg2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .features .cover{
     display: flex;
@@ -409,6 +409,7 @@ header li:hover span{
 /* PHẦN PORTFOLIO - OUR LATEST WORK */
 .portfolio{
     text-align: center;
+    background-image: url(../img/bg17.png);
 }
 .por_img_cover img{
     width: 100%;
@@ -523,8 +524,6 @@ header li:hover span{
     margin-top: 115px;
     text-align: center;
     background-image: url(../img/bg16.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 /* nút switch */
 .switch {
@@ -651,8 +650,6 @@ input:checked + .slider:before {
 /* PHẦN TESTIMONIAL */
 .testimonial{
     background-image: url(../img/bg17.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     text-align: center;
 }
 .testimonial_slider {
@@ -842,8 +839,6 @@ input:checked + .slider:before {
 /* PHẦN OUR BLOG */
 .blog{
     background-image: url(../img/bg16.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     text-align: center;
 
 }
@@ -942,9 +937,6 @@ input:checked + .slider:before {
 /* PHẦN FOOTER */
 footer{
     background-image: url(../img/bg4.png);
-    background-size: cover;
-    /* background-position: top; */
-    background-color: #000;
     background-color: #0e1b1f;
     position: relative;
     z-index: 0;
@@ -954,7 +946,6 @@ footer::after{
     background-image: url(../img/pattern2.png);
     background-position: left top;
     background-repeat: no-repeat;
-    /* background-size: cover; */
     position: absolute;
     top: 0;
     left: 0;
