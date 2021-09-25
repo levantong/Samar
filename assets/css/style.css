@@ -137,28 +137,107 @@ header{
     display: flex;
     transition: all 1s;
 }
-header ul{
+header .header_cover>ul{
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
     margin: 0 60px;
 }
-header li{
+.header_cover>ul>li{
+    height: 90px;
+    line-height: 90px;
     padding: 0 15px;
     list-style: none;
     cursor: pointer;
+    position: relative;
+}
+.header_cover i{
+    font-size: 11px;
+    margin-left: 3px;
+    margin-top: -3px;
 }
 header li span{
-    transition: all 1s;
+    font-weight: 500;
+    transition: all .5s;
     display: inline-block;
     margin-right: 2px;
 }
-header li:hover span{
+.header_cover>ul>li:hover>span{
     animation-name: MenuUpToDown;
-    animation-duration: .3s;
+    animation-duration: .4s;
+    color: var(--primary);
+}
+    /* phần menu phụ */
+.sub_nav,
+.sub_nav2{
+    position: absolute;
+    background-color: white;
+    width: 220px;
+    box-shadow: 0 1px 40px 0px rgb(0 0 0 / 10%);
+    transition: all .5s;
+    display: none;
+}
+.header_cover>ul li:hover .sub_nav{
+    animation: subNavUp .6s;
+    opacity: 1;
+    display: block;
+}
+.sub_nav li{
+    padding: 10px 25px;
+    font-weight: 500;
+    position: relative;
+    transition: all .3s;
+
+}
+.sub_nav li span{
+    transition: all .2s;
+
+}
+@keyframes subNavUp{
+    0%{transform: translateY(20px); opacity: 0;}
+    100%{transform: translateY(0px); opacity: 1;}
 }
 
+.sub_nav ul li:hover{
+    background-color: #F2F2F2;
+    padding: 10px 20px 10px 35px;
+    color: var(--primary);
+}
 
+    /* phần gạch nhỏ trước sub menu */
+.sub_nav li span::after,
+.sub_nav2 li span::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    background: var(--primary);
+    left: 20px;
+    top: 20px;
+    transition: all .3s;
+}
+.sub_nav>ul>li:hover>span::after,
+.sub_nav2>ul>li:hover>span::after{
+    width: 10px;
+}
+
+    /* phần menu phụ cấp 2: sub_nav2 */
+.have_nav2::after{  /*các thẻ có menu phụ thứ 2 sẽ có class have_nav2*/
+    content: "\f105"; /*làm dấu mũi tên bên phải*/
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free"; 
+    float: right;
+}
+
+.sub_nav2{
+    right: -220px;
+    top: 0;
+}
+.sub_nav li:hover .sub_nav2{
+    display: block;
+    animation: subNavUp .6s;
+
+}
 /* PHẦN BANNER = FREELANCE PRODUCT DESIGNER RUNNING */
 .banner{
     padding-top: 180px;
@@ -282,7 +361,7 @@ header li:hover span{
 } */
 .left_content .img_shadow{
     position: absolute;
-    padding-top: 66%;
+    /* padding-top: 66%; */
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -798,7 +877,7 @@ input:checked + .slider:before {
     font-weight: 400;
 }
 .swiper-slide-active .thumbs_item{
-    transform: translateY(-20px);
+    transform: translateY(-36px);
 }
 
 .swiper-slide-active .shape-bx{
@@ -832,7 +911,7 @@ input:checked + .slider:before {
 .thumbs_item::after{
     height: 10px;
     width: 10px;
-    bottom: 20px;
+    bottom: 36px;
     content: "";
     background-color: var(--primary);
     border-radius: 50px;
@@ -846,7 +925,7 @@ input:checked + .slider:before {
 .thumbs_item::before{
     height: 15px;
     width: 15px;
-    bottom: 40px;
+    bottom: 56px;
     content: "";
     background-color: var(--primary);
     border-radius: 50px;
@@ -1215,9 +1294,55 @@ footer::after{
     opacity: 1;
 }
 .cd-top--fade-out {
-    opacity: .6;
+    opacity: .8;
 }
   
+/* Phần 3 nút share góc dưới bên trái trang */
+.btn{
+    position: fixed;
+    left: 10px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 25px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 9999;
+    line-height: 50px;
+    transition: all .4s;
+    font-size: 20px;
+}
+.support.btn{
+    bottom: 70px;
+    background: linear-gradient(45deg, #1ebbf0 8%, #39dfaa 100%);
+}
+.btn i{
+    padding-left: 4px;
+}
+.buy_now.btn{
+    bottom: 10px;
+    background: linear-gradient(to bottom, #A3D179 0%, #88BA46 100%);
+}
+.btn:hover{
+    color: #fff;
+    padding: 0 10px;
+}
+.btn span{
+    opacity: 0;
+    letter-spacing: -15px;
+    transition: all .6s;
+    transition-timing-function: ease-in-out;
+
+}
+.btn:hover span{
+    opacity: 1;
+    letter-spacing: 1px;
+    padding-left: 6px;
+}
+
+.at-expanding-share-button[data-position=bottom-left] {
+    bottom: 130px !important;
+    left: 10px;
+}
 
 @keyframes BackToTop{
     50%{
@@ -1225,15 +1350,12 @@ footer::after{
     }
 }
 /* 3 nút góc trái */
-.buy_button::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f07a";
-    font-weight: 900;
+.buy_button{
     display: block;
     position: fixed;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 25px;
     bottom: 20px;
     left: 20px;
     background-color: var(--primary);
@@ -1243,9 +1365,18 @@ footer::after{
     box-shadow: -4px 4px 24px -10px var(--primary);
     transition: all 1s;
 }
-.buy_button::after:hover{
-    content: "\f07a" + Buy;
-    width: 250px;
+
+.buy_button:hover{
+    width: 150px;
+}
+.buy_button span{
+    transition: all 1s;
+    width: 0;
+    opacity: 0;
+}
+.buy_button:hover span{
+    width: 120px;
+    opacity: 1;
 }
 
 /* KHAI BÁO HIỆU ỨNG */
