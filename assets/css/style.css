@@ -1332,6 +1332,8 @@ footer::after{
     letter-spacing: -15px;
     transition: all .6s;
     transition-timing-function: ease-in-out;
+    line-height: 50px;
+
 
 }
 .btn:hover span{
